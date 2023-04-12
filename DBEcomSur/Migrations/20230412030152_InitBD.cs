@@ -52,7 +52,7 @@ namespace DBEcomSur.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     fiUsuarioId = table.Column<int>(type: "int", nullable: false),
                     fiProductoId = table.Column<int>(type: "int", nullable: false),
-                    cantidaCompr = table.Column<int>(type: "int", nullable: false),
+                    fiCantidaCompra = table.Column<int>(type: "int", nullable: false),
                     fcFechaCompra = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

@@ -14,9 +14,8 @@ namespace DBEcomSur
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int fiVentaId { get; set; }
         public int fiUsuarioId { get; set; }
-        public int fiProductoId { get; set; }
-        
-        public int cantidaCompr { get; set; }
+        public int fiProductoId { get; set; }      
+        public int fiCantidaCompra { get; set; }
         public string? fcFechaCompra { get; set; }
 
         [ForeignKey("fiProductoId")]
