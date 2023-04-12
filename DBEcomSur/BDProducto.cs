@@ -13,7 +13,7 @@ namespace DBEcomSur
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int fiProductoId { get; set; }
-        public int fcProducto{ get; set; }
+        public string? fcProducto{ get; set; }
         public double fdPrecio { get; set; }
         public int fiCantidadProducto { get; set; }
 

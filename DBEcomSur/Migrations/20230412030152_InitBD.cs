@@ -16,7 +16,7 @@ namespace DBEcomSur.Migrations
                 {
                     fiProductoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    fcProducto = table.Column<int>(type: "int", nullable: false),
+                    fcProducto = table.Column<int>(type: "nvarchar(max)", nullable: false),
                     fdPrecio = table.Column<double>(type: "float", nullable: false),
                     fiCantidadProducto = table.Column<int>(type: "int", nullable: false)
                 },
