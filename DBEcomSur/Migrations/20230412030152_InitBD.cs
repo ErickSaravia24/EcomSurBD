@@ -29,15 +29,17 @@ namespace DBEcomSur.Migrations
                 name: "BDUsuarios",
                 columns: table => new
                 {
-                    fiUsuarioId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    fiId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),                  
+                    fiUsuarioId = table.Column<int>(type: "int", nullable: false),
                     fcNombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fcAmaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fcApaterno = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fcCalle = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fcNumero = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fcColonia = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    fcFechaCreacion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    fcFechaCreacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    fiIdRol = table.Column<int>(type: "int", nullable: false),
                 },
                 constraints: table =>
                 {

@@ -13,7 +13,8 @@ namespace DBEcomSur
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int fiUsuarioId { get; set; }
+        public int fiId { get; set; }
+        public int fiUsuarioId { get; set; }      
         public string? fcNombre { get; set; }
         public string? fcAmaterno { get; set; }
         public string? fcApaterno { get; set; }
@@ -21,6 +22,7 @@ namespace DBEcomSur
         public string? fcNumero { get; set; }
         public string? fcColonia { get; set; }
         public string? fcFechaCreacion { get; set; }
+        public int fiIdRol { get; set; }
 
     }
 }
